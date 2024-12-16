@@ -1,6 +1,6 @@
 from PartA import PartA
-# from PartB import PartB
-# from PartC import PartC
+from PartB import PartB
+from PartC import PartC
     
 
 def main():
@@ -16,10 +16,13 @@ def main():
     print("2)", part_a.Q2(), "m")
     print("3)", part_a.Q3(), "m")
     
-    # print("\nQ.B) PRN_ID File")
-    # part_b = PartB()
+    print("\nQ.B) PRN_ID File")
+    part_b = PartB()
+    print("1)", part_b.Q1())
 
-    # print("\nQ.C) Covariance matrix")
+    print("\nQ.C) Covariance matrix")
+    part_c = PartC()
+    print("1)", part_c.Q1())
 
 if __name__ == "__main__":
     main()
