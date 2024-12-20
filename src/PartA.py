@@ -42,4 +42,7 @@ class PartA:
         3) Relativistic effect caused by the eccentricity of the GPS orbits (6 points)
         returns in meters
         """
-        pass
+        a = self.a_GPS
+        e = self.e_GPS
+        v_gps = np.sqrt(self.mu * (2 / (a * (1 - e)) - (1 / a)))
+        return -(2/Constants.c.value) * (a * (1 - e))*v_gps
